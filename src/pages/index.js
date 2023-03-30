@@ -4,11 +4,9 @@ import { useEffect } from 'react';
 export default function Home() {
   useEffect(() => {
     if (typeof window !== 'undefined' && window.Telegram && window.Telegram.WebApp) {
-      alert('Telegram Web App is available');
       window.Telegram.WebApp.ready();
       // You can use the Telegram Web App here
     } else {
-      alert('Telegram Web App is not available');
     }
   }, []);
   function sendMessage(){
@@ -24,10 +22,11 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <a href='https://t.me/sueweetiesmyanmar/68'>
+        Start-Up Ep : 6
+      </a>
       <button onClick={sendMessage()}>
-        <a href='https://t.me/sueweetiesmyanmar/68'>
-          Start-Up Ep : 6
-        </a>
+        send data
       </button>
     </>
   )
