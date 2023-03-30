@@ -4,10 +4,11 @@ import { useEffect } from 'react';
 export default function Home() {
   useEffect(() => {
     if (typeof window !== 'undefined' && window.Telegram && window.Telegram.WebApp) {
-      console.log('Telegram Web App is available');
+      alert('Telegram Web App is available');
+      window.Telegram.WebApp.ready();
       // You can use the Telegram Web App here
     } else {
-      console.log('Telegram Web App is not available');
+      alert('Telegram Web App is not available');
     }
   }, []);
   function sendMessage(){
