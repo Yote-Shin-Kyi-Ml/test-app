@@ -11,7 +11,8 @@ export default function Home() {
   }, []);
   function sendMessage(){
     if (typeof window !== 'undefined' && window.Telegram && window.Telegram.WebApp) {
-      window.Telegram.WebApp.sendData("hello world");
+      alert("clicked")
+      //window.Telegram.WebApp.sendData("hello world");
     }
   }
   return (
@@ -25,9 +26,10 @@ export default function Home() {
       <a href='https://t.me/sueweetiesmyanmar/68'>
         Start-Up Ep : 6
       </a>
-      {/* <button onClick={sendMessage()}>
+      <br/>
+      <button onClick={sendMessage()}>
         send data
-      </button> */}
+      </button>
     </>
   )
 }
