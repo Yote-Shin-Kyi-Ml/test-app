@@ -25,9 +25,9 @@ export default function Home() {
       <a href='https://t.me/sueweetiesmyanmar/68'>
         Start-Up Ep : 6
       </a>
-      <button onClick={sendMessage()}>
+      {/* <button onClick={sendMessage()}>
         send data
-      </button>
+      </button> */}
     </>
   )
 }
