@@ -11,8 +11,7 @@ export default function Home() {
   }, []);
   function sendMessage(){
     if (typeof window !== 'undefined' && window.Telegram && window.Telegram.WebApp) {
-      alert("clicked")
-      //window.Telegram.WebApp.sendData("hello world");
+      window.Telegram.WebApp.sendData("hello world");
     }
   }
   return (
@@ -27,7 +26,7 @@ export default function Home() {
         Start-Up Ep : 6
       </a>
       <br/>
-      <button onClick={sendMessage()}>
+      <button onClick={sendMessage}>
         send data
       </button>
     </>
